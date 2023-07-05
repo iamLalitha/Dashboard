@@ -136,26 +136,29 @@
 // export default App;
 
 
-import 'semantic-ui-css/semantic.min.css';
+
 import './App.css';
 import Create from './components/create';
 import Read from './components/read';
 import Update from './components/update';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    // <Router>
       <div className="main">
         <h2 className="main-header">React Crud Operations</h2>
-        <Routes>
+        {/* <Routes> */}
           {/* <Route path="/" element={<Read />} /> Default route for the root URL */}
-          <Route path="/create" element={<Create />} />
+          {/* <Route path="/create" element={<Create />} />
           <Route path="/read" element={<Read />} />
           <Route path="/update" element={<Update />} />
-        </Routes>
+        </Routes> */}
+        <Create/>
+        <Read/>
+        <Update/>
       </div>
-    </Router>
+    // </Router>
   );
 }
 
